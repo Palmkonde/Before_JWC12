@@ -8,28 +8,28 @@
     </head>
     <body>
         <div class = "menu">
-            <a link = ""> เกี่ยวกับเรา </a>
-            <a link = ""> บทความ </a>
-            <a link = ""> จองคิว </a>  
+            <a href = "#about" class = "l"> เกี่ยวกับเรา </a>
+            <a href = "#history" class = "l"> บทความ </a>
+            <a href = "#queue" class = "l"> จองคิว </a>  
         </div>
         
         <hr>
         
-    <div class = "queue">
+    <div id = "queue">
         <h1> หมอหมึก </h1>
         <p> ผู้มีประสบการณ์มากถึง 10 ปี</p>
-        <button type = "button" id = "btn" onclick="myFunc();">จองคิว </button>
-        
+        <p id="demo"></p>
         <script>
             function myFunc() {
-                alert("จองคิวแล้ว");
+                document.getElementById("demo").innerHTML = "จองคิวสำเร็จ";
             }
-
-        </script>
+            
+            </script>
     </div>
+    <button id = "btn" onclick="myFunc()">จองคิว</button>
     
     
-    <div class = "history">
+    <div id = "history">
         <h3> ประวัติแม่หมอ </h3>
         <div id = "paragraph">
             หมอหมึกเป็นนักพยากรณ์ที่ชำนาญด้านการทำนายดวงด้วย<br>
@@ -43,7 +43,7 @@
         
     </div>
     
-    <div class = "review">
+    <div id = "review">
         <h3>รีวิวจากลูกค้า</h3>
         
         <div id = "first">
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div class = "map">
+    <div id = "map">
         <h3>การเดินทาง</h3>
         <div id = "map">
             <img src="asset/Ladkrabang.jpg" width="350px" height="auto"> 
